@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Fruktur', cursive;
+  color: #eee;
+  background-color: #222;
+}
+
+/* LAYOUT */
+header {
+  width: 100%;
+  height: 27%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.between {
+  text-align: center;
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+  height: auto;
+}
+
+.left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guess, .btn {
+  width: 50%;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-family: 'Fruktur', cursive;
+  color: #eee;
+  border: 5px solid #eee;
+  outline: none;
+}
+
+.guess {
+  margin-top: 4rem;
+  width: 35%;
+  text-align: left;
+}
+
+.btn {
+  padding: 0;
+  margin-top: 1rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #222;
+}
+
+.right {
+  font-size: 2rem;
+}
+
+.message {
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  main {
+    flex-direction: column;
+  }
+  .left {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .guess {
+    width: 25%;
+    margin-top: 1rem;
+  }
+  .btn {
+    width: 30%;
+    letter-spacing: normal;
+  }
+  .right {
+    font-size: 1.5rem;
+  }
+  .message {
+    font-size: 2rem;
+  }
+}

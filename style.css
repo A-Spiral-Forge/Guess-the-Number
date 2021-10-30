@@ -46,10 +46,16 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.guess-label {
+  margin-top: 4rem;
+  font-size: 2rem;
 }
 
 .guess, .btn {
-  width: 50%;
+  width: 45%;
   height: 4rem;
   padding: 1rem;
   font-size: 2rem;
@@ -61,8 +67,8 @@ main {
 }
 
 .guess {
-  margin-top: 4rem;
-  width: 35%;
+  margin-top: 1rem;
+  width: 30%;
   text-align: left;
 }
 
@@ -71,6 +77,10 @@ main {
   margin-top: 1rem;
   letter-spacing: 0.4rem;
   cursor: pointer;
+}
+
+.again {
+  width: auto;
 }
 
 .btn:hover {
@@ -98,13 +108,19 @@ main {
     width: 100%;
     justify-content: space-between;
   }
+  .guess-label {
+    margin: 0.5rem;
+  }
   .guess {
-    width: 25%;
-    margin-top: 1rem;
+    margin: 0.5rem;
+    width: 40%;
   }
   .btn {
-    width: 30%;
     letter-spacing: normal;
+    margin: 0.5rem;
+  }
+  .check {
+    width: 40%;
   }
   .right {
     font-size: 1.5rem;
